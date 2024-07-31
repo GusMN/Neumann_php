@@ -2,7 +2,7 @@
 
 $db = new mysqli("localhost","root","","biblioteca");
 
-$query = "insert into livros (titulo, autor, ano) values ('{$_POST['titulo']}','{$_POST['autor']}',{$_POST['ano']})";
+$query = "delete from livros where idLivro = {$_GET['idLivro']}";
  
 $db->query($query);
 

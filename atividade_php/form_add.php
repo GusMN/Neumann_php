@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adicionar livro</title>
+    <title>Adicionar Meme</title>
 </head>
 <body>
-    <form method='post' action='addLivro.php'>
-        <label for=titulo>Título</label>
+    <form method='post' action='addMeme.php'>
+        <label for=imagem>URL da imagem</label>
         <input type=text id=titulo required name=titulo>
         <br>
-        <label for=ano>Ano</label>
-        <input type=number id=ano required name=ano>
-        <br>
-        <label for=autor>Autor(a)</label>
-        <input type=text id=autor required name=autor>
+        <label for=texto>Texto</label>
+        <input type=text id=texto required name=texto>
         <br>
         <input type=submit name=botao value='Adicionar'>
     </form>
