@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: sandybrown;
+    text-align: center;
+}
+
+table{
+    margin:0 auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+
+h1{
+    margin: 12px;
+    font-family: 'Zeyada';
+}
+
+h3{
+    margin: 12px;
+}
+
+img{
+    width: 160px;
+}
