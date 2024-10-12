@@ -59,10 +59,9 @@ if(!isset($_SESSION['id'])){
             echo "<td>
         <a href='deletePokemon.php?Pokedex_number={$pkmn['Pokedex_number']}'>Apagar</a>
         <a href='form_editPokemon.php?Pokedex_number={$pkmn['Pokedex_number']}'>Editar</a>
-        <a href='form_addPokemon.php?'>Adicionar novo Pokemon</a>;
+        <a href='form_addPokemon.php?'>Adicionar novo Pokemon</a>
             </td>";
             echo "</tr>";
         }
-        
         echo "</table>"; 
     }

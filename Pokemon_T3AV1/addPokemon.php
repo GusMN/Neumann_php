@@ -32,6 +32,6 @@ if (!$query->execute()) {
 }
 
 // Opcional: redirecionar de volta após a inserção
-header("Location: index.php");
+header("Location: meus_pokemon.php");
 exit();
 ?>

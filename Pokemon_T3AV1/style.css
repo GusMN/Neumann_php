@@ -31,6 +31,16 @@ table {
     margin-top: 20px;
 }
 
+form{
+    text-align: center;
+    margin: 4px;
+}
+
+input{
+    margin: 8px;
+}
+
+
 thead {
     background-color: #457b9d; /* Cabeçalho com cor azulada */
     color: white;
@@ -62,20 +72,39 @@ tbody td a {
     color: rgb(255, 255, 255);
     border-radius: 5px;
     font-weight: bold;
-    background-color: #ffde00;
 }
 
 tbody td a:hover {
     opacity: 0.8;
-    background-color: #b3a125;
+    background-color: #646464;
 }
 
 a[href*="delete"] {
-    background-color: #e63946;
+    background-color: #e63946; 
 }
 
-a[href*="editar"] {
+a[href*='form_editPokemon.php'] {
+    background-color: #ffde00; 
+}
+
+a[href*='form_addPokemon.php'] {
     background-color: #457b9d;
+}
+
+
+
+a[href*="delete"]:hover {
+    background-color: #b1000f; 
+
+}
+
+a[href*='form_editPokemon.php']:hover {
+    background-color: #685a00; 
+}
+
+
+a[href*='form_addPokemon.php']:hover {
+    background-color: #00314f; 
 }
 
 /* Estilos responsivos */

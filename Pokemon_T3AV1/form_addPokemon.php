@@ -15,6 +15,8 @@ if (!isset($_SESSION['id'])) {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class ='container'>
+        <div class='box'>
 <h1>Adicione novo Pokemon aqui!</h1>
     <form method='post' action='addPokemon.php'>
         <label for="pokedex_number">Pokemon:</label>
@@ -47,5 +49,7 @@ if (!isset($_SESSION['id'])) {
         <br>
         <input type="submit" name="botao" value="Adicionar">
     </form>
+    </div>
+</div>
 </body>
 </html>

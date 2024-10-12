@@ -9,12 +9,12 @@
 <body>
     <div class='container'>
         <div class='box'>
-            <h1>Bom dia!</h1>
+            <h1>Bem vindo!</h1>
             <form action='login.php' method='post'>
                 <label>E-mail:</label>
-                <input type='text' name='email' required>
+                <input type='text' name='email' required><br>
                 <label>Senha:</label>
-                <input type='password' name='senha' required>
+                <input type='password' name='senha' required><br>
                 <div class='grupo_botao'>
                     <input type='submit' name='botao' value='Acessar'>
                 </div>

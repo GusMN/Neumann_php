@@ -28,7 +28,7 @@ $resultado = $stmt->get_result();
 </head>
 <body>
     <div class='container'>
-    <h1>Bem Vindo</h1>
+    <h1>Espécies nativas de Kanto</h1>
     
     <?php
 
@@ -45,7 +45,6 @@ $resultado = $stmt->get_result();
             <th>Defense</th>
             <th>Type</th>
             <th>Legendary</th>
-            <th>Ações</th> <!-- Para indicar que essa coluna é das ações -->
         </tr>";
         
         foreach($pokemons as $pkmn){
