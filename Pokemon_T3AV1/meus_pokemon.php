@@ -11,7 +11,11 @@ if(!isset($_SESSION['id'])){
     $db = new mysqli("localhost", "root", "", "pokemons_dataset");
     
     //Tenho que testar---> "join pokemon on pessoa_pokemon.pokedex_number = pokemon.Pokedex_number" em algum lugar...
-    $stmt = $db->prepare("select * from pessoa_pokemon where id_pessoa = ?");
+    $stmt = $db->prepare("
+    SELECT p.Name, p.Attack, p.Defense, p.Type, p.Is_legendary, pp.Pokedex_number 
+    FROM pessoa_pokemon pp
+    JOIN pokemon p ON pp.pokedex_number = p.Pokedex_number
+    WHERE pp.id_pessoa = ?");
     $stmt->bind_param("i",$_SESSION['id']);
     $stmt->execute();
     //Executa a consulta e armazena o resultado
@@ -35,7 +39,7 @@ if(!isset($_SESSION['id'])){
         echo "<a href='form_addPokemon.php?'>Adicionar novo Pokemon</a>";
     } else {
         $pokemons = $resultado->fetch_all(MYSQLI_ASSOC);
-        echo "<table border='1'>"; // Adicionei uma borda para facilitar a visualização
+        echo "<table border='1'>"; 
         echo "<tr>
             <th>Nome</th>
             <th>Attack</th>
@@ -54,11 +58,11 @@ if(!isset($_SESSION['id'])){
             echo "<td>{$pkmn['Is_legendary']}</td>";
             echo "<td>
         <a href='deletePokemon.php?Pokedex_number={$pkmn['Pokedex_number']}'>Apagar</a>
-        <a href='form_editar_pokemon.php?Pokedex_number={$pkmn['Pokedex_number']}'>Editar</a>
+        <a href='form_editPokemon.php?Pokedex_number={$pkmn['Pokedex_number']}'>Editar</a>
         <a href='form_addPokemon.php?'>Adicionar novo Pokemon</a>;
             </td>";
             echo "</tr>";
         }
         
-        echo "</table>"; // Fechando a tabela corretamente
+        echo "</table>"; 
     }

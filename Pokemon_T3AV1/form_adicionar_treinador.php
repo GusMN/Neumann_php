@@ -1,5 +1,5 @@
 <?php 
- if(isset($_POST['botao'])){
+if(isset($_POST['botao'])){
         
     //Sanitiza as variáveis recebidas
     $email = filter_var($_POST['email'],FILTER_SANITIZE_EMAIL);
@@ -15,10 +15,10 @@
     $stmt = $db->prepare("insert into pessoa (email,senha) values (?,?)");
     
     /* Insere as variáveis de forma segura
-      ss é String String
-      https://www.php.net/manual/pt_BR/mysqli-stmt.bind-param.php
+    ss é String String
+    https://www.php.net/manual/pt_BR/mysqli-stmt.bind-param.php
     */
-     $stmt->bind_param("ss",$email,$password_hash);
+    $stmt->bind_param("ss",$email,$password_hash);
 
     //Executa
     $stmt->execute();
@@ -32,7 +32,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adicionar Pessoa</title>
+    <title>Adicionar treinador</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
