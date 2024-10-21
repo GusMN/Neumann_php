@@ -33,6 +33,8 @@ if(!isset($_SESSION['id'])){
 <body>
     <div class='container'>
     <h1>Seus Pokemon</h1>
+        <a href='pesquisa.php?'>Pesquisar treinador</a>
+        <a href='media.php?'>Média do treinador</a>
     <?php 
     if($resultado->num_rows == 0){
         echo "Você ainda não tem nenhum Pokemon :(";

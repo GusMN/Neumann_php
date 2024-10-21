@@ -24,6 +24,20 @@ h1 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+h2{
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+p{
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
 /* Estilos da tabela */
 table {
     width: 100%;
@@ -87,6 +101,10 @@ a[href*='form_editPokemon.php'] {
     background-color: #ffde00; 
 }
 
+a[href*='pesquisa.php'] {
+    background-color: #86459d;
+}
+
 a[href*='form_addPokemon.php'] {
     background-color: #457b9d;
 }
@@ -102,6 +120,9 @@ a[href*='form_editPokemon.php']:hover {
     background-color: #685a00; 
 }
 
+a[href*='pesquisa.php']:hover {
+    background-color: #5d1677; 
+}
 
 a[href*='form_addPokemon.php']:hover {
     background-color: #00314f; 
